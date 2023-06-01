@@ -10,3 +10,23 @@
 #gallery img.active {
     display: block;
 }
+
+.row{
+    position: relative;
+}
+
+.fa-solid{
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.fa-arrow-up{
+    top: 5%;
+    left: 90%;
+}
+
+.fa-arrow-down{
+    top: 95%;
+    left: 90%;
+}
