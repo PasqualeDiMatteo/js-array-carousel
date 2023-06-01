@@ -1,4 +1,5 @@
 
+/* Image */
 
  img {
     width: 100%;
@@ -6,9 +7,12 @@
     display: none;
     object-fit: cover;
 }
+
 .active {
     display: block;
   }
+
+/* thumbnails */
 
   .thumbnails img{
     width: 400px;
@@ -32,9 +36,12 @@
     opacity: 1;
    }
 
+
 .col{
     position: relative;
 }
+
+/* Arrow */
 
 .fa-solid{
     position: absolute;
