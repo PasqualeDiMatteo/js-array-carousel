@@ -10,7 +10,29 @@
     display: block;
   }
 
-.row{
+  .thumbnails img{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    bottom: 100%;
+    opacity: 0.5;
+  }
+
+  .thumbnails { 
+    display: flex;
+    flex-direction: column;
+    bottom:0;
+    right: 10px;
+    position: absolute;
+    align-items: flex-end;
+   }
+
+   .thumbnails .selected{ 
+    border: 5px solid rgb(130, 128, 240);
+    opacity: 1;
+   }
+
+.col{
     position: relative;
 }
 
@@ -23,9 +45,11 @@
 .fa-arrow-up{
     top: 5%;
     left: 90%;
+    z-index: 1;
 }
 
 .fa-arrow-down{
-    top: 95%;
+    bottom: 5%;
     left: 90%;
+    z-index: 1;
 }

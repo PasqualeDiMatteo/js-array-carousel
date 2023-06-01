@@ -34,6 +34,8 @@ galley.innerHTML = imageElements;
 
 const images = document.querySelectorAll("img");
 
+const image = document.querySelectorAll(".thumbnails img");
+
 // I prepare the management of the index
 
 currentIndex = 0;
@@ -42,6 +44,8 @@ currentIndex = 0;
 
 images[currentIndex].classList.add("active");
 
+image[currentIndex].classList.add("selected");
+
 // Eventlistener next
 
 next.addEventListener("click", function () {
@@ -49,6 +53,7 @@ next.addEventListener("click", function () {
     // I hide the picture
 
     images[currentIndex].classList.remove("active");
+    image[currentIndex].classList.remove("selected");
     currentIndex = -1;
 
     // increase the current index
@@ -58,13 +63,14 @@ next.addEventListener("click", function () {
     // I add active to the corresponding image
 
     images[currentIndex].classList.add("active");
-
+    image[currentIndex].classList.add("selected");
     return;
   }
 
   // I hide the picture
 
   images[currentIndex].classList.remove("active");
+  image[currentIndex].classList.remove("selected");
 
   // increase the current index
 
@@ -73,6 +79,7 @@ next.addEventListener("click", function () {
   // I add active to the corresponding image
 
   images[currentIndex].classList.add("active");
+  image[currentIndex].classList.add("selected");
 });
 
 // Eventlistener Pre
@@ -82,6 +89,7 @@ pre.addEventListener("click", function () {
     // I hide the picture
 
     images[currentIndex].classList.remove("active");
+    image[currentIndex].classList.remove("selected");
     currentIndex = 5;
 
     // decrease the current index
@@ -91,12 +99,14 @@ pre.addEventListener("click", function () {
     // I add active to the corresponding image
 
     images[currentIndex].classList.add("active");
+    image[currentIndex].classList.add("selected");
     return;
   }
 
   // I hide the picture
 
   images[currentIndex].classList.remove("active");
+  image[currentIndex].classList.remove("selected");
 
   // decrease the current index
 
@@ -105,4 +115,5 @@ pre.addEventListener("click", function () {
   // I add active to the corresponding image
 
   images[currentIndex].classList.add("active");
+  image[currentIndex].classList.add("selected");
 });
